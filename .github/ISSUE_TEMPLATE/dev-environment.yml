@@ -38,3 +38,11 @@ body:
       placeholder: Use SQLLite while testing
     validations:
       required: false
+  - type: textarea
+    id: extra
+    attributes:
+      label: Extra Information
+      description: Post any extra links, screenshots, or references that might be helpful here
+      placeholder: Check out this for how the tests should be implemented https://www.youtube.com/watch?v=dQw4w9WgXcQ
+    validations:
+      required: false
