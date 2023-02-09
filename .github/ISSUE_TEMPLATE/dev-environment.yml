@@ -1,0 +1,40 @@
+name: Dev Environment
+description: File suggestion that relates to the developer environment
+title: "[Dev Env]: "
+labels: ["🛠️dev env"]
+body:
+  - type: dropdown
+    id: area
+    attributes:
+      label: area
+      description: What area of the dev env does this relate to?
+      multiple: true
+      options:
+        - Linting
+        - Testing
+        - Running in development
+        - VSCode
+        - Storybook
+        - Turborepo
+        - Design
+        - Continous Integration
+        - Continous Deployment
+        - GitHub
+    validations:
+      required: true
+  - type: textarea
+    id: idea
+    attributes:
+      label: Suggestion?
+      description: What changes would you like to see?
+      placeholder: Please make the tests run faster
+    validations:
+      required: true
+  - type: textarea
+    id: possible-solutions
+    attributes:
+      label: Possible Solutions
+      description: Got ideas for how to solve this?
+      placeholder: Use SQLLite while testing
+    validations:
+      required: false
